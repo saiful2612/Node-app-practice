@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Cart Quantity</p>
+
+    <button onclick="
+        show_quantity();
+    ">Show Quantity</button>
+    <button onclick="
+        add_quantity(1);
+    ">Add to cart</button>
+    <button onclick="
+        add_quantity(2);
+    ">+2</button>
+    <button onclick="
+        add_quantity(3);
+    ">+3</button>
+    <button onclick="
+        reset_quantity();
+    ">Reset</button>
+
+    <script>
+        let cartQuantity = 0;
+
+        function show_quantity(){
+            alert('Cart Quantity :' + cartQuantity);
+        }
+
+        function add_quantity(paramterer ){
+            cartQuantity+=paramterer;
+            console.log(cartQuantity);
+        }
+
+        function reset_quantity(){
+            console.log('Cart Quantity Reset');
+            cartQuantity = 0;
+            console.log(cartQuantity);
+
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="cart-quantity">Cart Quantity: 0</p>
+
+  <button onclick="showQuantity()">Show Quantity</button>
+  <button onclick="addQuantity(1)">Add to cart</button>
+  <button onclick="addQuantity(2)">+2</button>
+  <button onclick="addQuantity(3)">+3</button>
+  <button onclick="resetQuantity()">Reset</button>
+
+  <script>
+    let cartQuantity = 0;
+
+    function addQuantity(parameter) {
+      cartQuantity += parameter;
+      updateQuantityDisplay();
+    }
+
+    function resetQuantity() {
+      cartQuantity = 0;
+      updateQuantityDisplay();
+    }
+
+    function showQuantity() {
+      alert("Cart Quantity: " + cartQuantity);
+    }
+
+    function updateQuantityDisplay() {
+      document.getElementById("cart-quantity").textContent = "Cart Quantity: " + cartQuantity;
+    }
+  </script>
+</body>
+</html> -->

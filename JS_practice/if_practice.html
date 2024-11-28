@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="
+        random_value();
+        "> Random Value</button>
+
+
+    <script>
+
+        function random_value(){
+            let x = Math.round(Math.random()*10);
+            if(x <=4){
+                console.log('Good Boy');
+            } else if( x>4 && x<=7){
+                console.log('Hello World');
+            } else{
+                console.log('See you soon');
+            }
+            console.log(x);
+        }
+
+
+
+        const arr_name =[ 'alu', 'potol', 'lau', 'tomato'];
+
+        let i =0;
+        while( i<arr_name.length){
+
+            if(arr_name[i] === 'potol'){
+                console.log(arr_name[i]);
+                //continue;
+                break;
+            }
+            
+            i++;
+        }
+
+        for(let i=0; i<arr_name.length;i++){
+
+            if(arr_name[i] === 'potol'){
+                //continue;
+                //break;
+            }
+            //console.log(arr_name[i]);
+        }
+
+
+
+
+
+        var x = 11;
+        var x = 12;
+        console.log(x);
+    </script>
+</body>
+</html>

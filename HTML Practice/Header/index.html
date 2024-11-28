@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .clear-fix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .l_part{
+            float: left;
+        }
+
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+        li{
+            display: inline-block; 
+            width: 16%;
+            /* border: 1px solid blue; */
+            text-align: center;
+            margin-left: 25px;
+        }
+        a{
+            text-decoration:none;
+            color: #fff;
+            /* border: 1px solid green; */
+            
+            /* background-color: aquamarine; */
+            
+        }
+        a:hover{
+            /* color: #fff; */
+            color: rgba(255, 105, 0, 1);
+            font-weight: 700;
+            font-size:16px;
+            padding: 16px 11px;
+            text-decoration: none;
+            background-color: #262626;
+        }
+
+
+        .box{
+            height: 50px;
+            float: left;
+        }
+
+        .left-box{
+            width: 40%;
+            border: 1px solid red;
+        }
+
+        .right-box{
+            width:59%;
+            /* border: 1px solid green; */
+            background-color: #111;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>BAR</h1>
+
+    <!-- <div class="main-bar">
+        <div class="left-side float_bar">
+            <div>logo</div>
+    
+            <div><input type="text"></div>
+        </div>
+    
+        <div class="top-bar float_bar">
+            <ul class="bar">
+                <Li>
+                    <a href="">Home</a>
+                </Li>
+                <Li>
+                    <a href="">About</a>
+                </Li>
+                <Li>
+                    <a href="">Blog</a>
+                </Li>
+                <Li>
+                    <a href="">Work</a>
+                </Li>
+                <Li>
+                    <a href="">Contact</a>
+                </Li>
+            </ul>
+        </div>
+    </div> -->
+
+    <div>
+        <div class="box left-box clear-fix">
+            <div class="l_part">logo</div>
+            <div class="l_part">name</div>
+        </div>
+
+
+        <div class="box right-box">
+
+            <div class="top-bar float_bar">
+                <ul class="bar">
+                    <Li>
+                        <a href="">Home</a>
+                    </Li>
+                    <Li>
+                        <a href="">About</a>
+                    </Li>
+                    <Li>
+                        <a href="">Blog</a>
+                    </Li>
+                    <Li>
+                        <a href="">Work</a>
+                    </Li>
+                    <Li>
+                        <a href="">Contact</a>
+                    </Li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+    
+</body>
+</html>

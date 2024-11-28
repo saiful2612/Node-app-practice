@@ -1,0 +1,61 @@
+.featured_portion{
+    display: grid;
+    grid-template-columns: 420px 1fr 440px;
+    margin-left:100px;
+
+}
+
+.div1{
+    border: 1px solid red;
+    position: relative;
+   
+}
+
+.div2{
+    border: 1px solid green;
+}
+
+.div3{
+    border: 1px solid blue;
+}
+
+.feature-img{
+    width: 90%;
+    /* position: relative; */
+    
+    
+}
+
+.feature-icon{  
+    border: none;
+    
+}
+
+.feature-icon-box{
+    background-color: #f35525;
+    width:45px;
+    height: 45px;
+    padding: 30px;
+    border-radius: 60px;
+    position: absolute;
+    bottom:-50px;
+    left: -50px;
+}
+
+.div2 h6{
+    color: #ee626b;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.div2 h2{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 20px;
+    line-height: 56px;
+}
+
+.useful links
+
